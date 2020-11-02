@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="formTitle">Tip Calculator</h1>
+    <div class="form">
+      <p>How much was your bill?</p>
+      <p>$ <input class="bill resizedTextbox" type="text" placeholder="Bill amount"></p>
+      <p>How was the service?</p>
+      <select class="service" name="service">
+        <option disabled hidden selected>-- Choose an option --</option>
+        <option value="0.3">Exceptional - 30%</option>
+        <option value="0.25">Great - 25%</option>
+        <option value="0.2">Solid - 20%</option>
+        <option value="0.15">Decent - 15%</option>
+        <option value="0.1">So-so - 10%</option>
+        <option value="0.05">Subpar - 5%</option>
+      </select>
+      <p>How big is your party?</p>
+      <p><input class="party resizedTextbox" type="text" placeholder="# of people" maxlength="3"> people</p>
+    </div>
+
+    <h3 id="result" class="hidden">Tip: $<span id="tip">0.00</span> <span id="each">each</span></h3>
+    <div class="button">CALCULATE</div>
+
+  </div>
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
